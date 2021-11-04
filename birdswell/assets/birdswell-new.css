@@ -44,6 +44,14 @@
 .med-left span, .med-right span {
   align-self: flex-end;
 }
+.connect_stuff .fa{
+  padding: 5px;
+  font-size: 30px;
+  width: 33px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
 #connect_stuff {
   text-align: center;
 }
