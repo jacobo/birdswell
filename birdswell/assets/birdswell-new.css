@@ -17,16 +17,63 @@
   font-size: 25px;
   line-height: 30px;
 }
-img.med-left {
-  width: 400px;
-  margin: 5px;
+.med-left {
+  background: url(med2.jpg) no-repeat;
+  background-size: 436px 309px;
+  width: 431px;
+  height: 304px;
+  margin: 0;
   float: left;
+  display: flex;
+  color: #fff;
+  padding-left: 5px;
+  padding-bottom: 5px;
 }
-img.med-right {
-  width: 400px;
-  margin: 5px;
+.med-right {
+  background: url(med1.jpg) no-repeat;
+  background-size: 436px 309px;
+  width: 431px;
+  height: 304px;
+  margin: 0;
   float: right;
+  display: flex;
+  color: #fff;
+  padding-left: 5px;
+  padding-bottom: 5px;
 }
+.med-left span, .med-right span {
+  align-self: flex-end;
+}
+#connect_stuff {
+  text-align: center;
+}
+#connect_stuff .fa {
+  padding: 5px;
+  font-size: 30px;
+  width: 33px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+#connect_stuff a.legacy {
+  display: block;
+  margin-top: 15px;
+  font-size: 90%;
+  color: #1ea7b5;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #f00075;
+  color: white;
+}
+
 
 
 body{
@@ -38,6 +85,7 @@ body{
 a {
   color: #0f6377;
   text-decoration: underline;
+  font-weight: bold;
 }
 p {
   padding-bottom: 18px;
@@ -45,19 +93,19 @@ p {
 #wrapper {
   background: #fff;
   width: 947px; 
-/*  width: 867px;*/
-/*  padding: 40px;*/
   margin: auto;
-  margin-top: 10px;
+  margin-top: 100px;
   position: relative;
+  /* border: 2px solid #e5d89d; */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #wrapper #wrapped_top_new{
   position: relative;
-  background: #fff;
   width: 947px;
   padding: 0;
   margin: 0;
-  height: 237px;
+  height: 160px;
 }
 #wrapper #wrapped_top{
   position: relative;
@@ -68,50 +116,76 @@ p {
   height: 237px;
 }
 #wrapper #wrapped_top_new img#logoimage{
-  margin-top: 4px;
-  margin-left: 3px;
+  position: absolute;
+  top: -90px;
+  left: -20px;
 }
 #wrapper #wrapped_top img#logoimage{
   margin-top: 4px;
   margin-left: 3px;
 }
 #wrapper #wrapped_bottom{
-  clear: both;
-  background: #fff;
+  /* clear: both; */
+  /* background: #fff; */
 /*  width: 947px;*/
 /*  height: 223px;*/
-  height: 83px;
-  color: #5bd1d1;
-  font-size: 85%;
-  margin-top: 10px;
+  /* height: 83px; */
+  /* color: #5bd1d1; */
+  /* font-size: 85%; */
+
+  background: url(birdswell_bottom_graphic.png) no-repeat;
+  background-size: 442px 100px;
+  background-position: top 5px right 5px;
+  padding-top: 100px;
+  /* margin-top: 10px;
   padding-top: 140px;
   padding-left: 40px;
   padding-right: 40px;
-  position: relative;
+  position: relative; */
+  padding: 100px 5px 5px 5px;
 }
+#wrapper #wrapped_bottom #more_bottom{
+  background: #0e6377;
+  height: 100px;
+  padding: 10px;
+  color: #5bd1d1;
+  border-radius: 0 0 15px 15px;
+}
+#wrapper #wrapped_bottom #more_bottom .mighty2{
+  color: #fff;
+}
+
 #wrapper #wrapped_bottom #email_signup{
-  margin: 0px;
+  margin: 10px 10px 0 0;
   padding: 0px;
 }
 #wrapper #wrapped_bottom #email_signup input#email_signup_email{
+  position: absolute;
   font-size: 16px;
-  margin: 0px;
-  padding: 2px;
-  position: relative;
-  left: 0px;
-  bottom: 5px;
-  width: 160px;
+  margin-top: 5px;
+  padding: 5px;
+  width: 165px;
+  height: 20px
 }
 #wrapper #wrapped_bottom #email_signup input#email_signup_email.example {
-  padding-top: 6px;  
-  padding-bottom: 3px;  
   font-size: 12px;
   color: #999;
 }
 #wrapper #wrapped_bottom #email_signup input#email_signup_submit{
   position: relative;
-  margin-left: 5px;
-  bottom: -5px;
+  left: 190px;
+  font-size: 20px;
+  line-height: 25px;
+  font-family: 'Mighty';
+  font-weight: bold;
+  margin: 0;
+  margin-top: 5px;
+  padding: 5px 5px 0px 5px;
+  text-transform: uppercase;
+  color: #8b5c28;
+  background: #f1d14c;
+  border: 2px solid #fff;
+  border-radius: 5px;
 }
 #wrapper #wrapped_bottom #connect_stuff{
   float: right;
@@ -122,9 +196,7 @@ p {
   margin-right: 5px;
 }
 #wrapper #wrapped_middle{
-  padding-left: 40px;
-  padding-right: 35px;
-  padding-top: 10px;  
+  padding: 15px;
 }
 #upper_header{
   text-align: right;
@@ -205,8 +277,8 @@ div#nav {
 }
 div#nav_new {
   font-family: 'Mighty';
-  right: 40px;
-  top: 77px;
+  right: 15px;
+  top: 0px;
   color: #fff;
   background-color: #0f6377;
   text-align: right;
@@ -230,8 +302,8 @@ div#nav_new li a:hover {
 
 div#floaty-nav {
   font-family: 'Mighty';
-  right: 40px;
-  top: 197px;
+  right: 15px;
+  top: 118px;
   color: #fff;
   text-align: right;
   position: absolute;
@@ -243,9 +315,7 @@ div#floaty-nav li a {
   text-transform: uppercase;
   text-decoration: none;
   background-color: #0f6377;
-  border-left: 2px solid #003a51;
-  border-right: 2px solid #003a51;
-  border-bottom: 2px solid #003a51;
+  border: 2px solid #003a51;
   border-radius: 10px 10px 10px 10px;
 }
 div#floaty-nav li a:hover {
@@ -342,15 +412,14 @@ div#nav a.active, div#nav a.active:hover, div#nav li#end a.active, div#nav li#en
 }
 
 div.content{
-  background: url(content_outline_middle.gif);  
   position: relative;
-  width: 880px;
+  /* width: 880px; */
+  border: 1px solid #73a2af;
+  border-radius: 5px;
+  padding: 0 15px;
 }
 div.content h3{
   color: #8b5c26;
-}
-div.content .content_middle{
-  padding: 10px 20px 10px 20px;
 }
 div.lookbook .thankyou{
   background: url(LP_Background_new_new.gif) no-repeat;
@@ -399,12 +468,10 @@ div.lookbook .details .birdswell_info ul li {
   padding-top: 8px;
 }
 div.content .content_top{
-  background: url(content_outline_top.gif) no-repeat;
   width: 880px;
   height: 9px;
 }
 div.content .content_bottom{
-  background: #fff url(content_outline_bottom.gif) no-repeat;
   width: 880px;
   height: 9px;
   padding: 0;
@@ -416,6 +483,9 @@ div.content .content_bottom{
   text-align:right;
 }
 .mc-field-group{
+  clear:both;
+}
+.clear {
   clear:both;
 }
 #signup_form input {
