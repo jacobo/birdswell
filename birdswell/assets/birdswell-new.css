@@ -193,7 +193,7 @@ p {
   color: #8b5c28;
   background: #f1d14c;
   border: 2px solid #fff;
-  border-radius: 1px;
+  border-radius: 5px;
   cursor: pointer;
 }
 #wrapper #wrapped_bottom #connect_stuff{
