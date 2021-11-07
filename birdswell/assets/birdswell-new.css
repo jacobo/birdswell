@@ -194,6 +194,7 @@ p {
   background: #f1d14c;
   border: 2px solid #fff;
   border-radius: 1px;
+  cursor: pointer;
 }
 #wrapper #wrapped_bottom #connect_stuff{
   float: right;
