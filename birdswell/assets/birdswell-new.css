@@ -152,7 +152,7 @@ p {
   position: relative; */
   padding: 100px 5px 5px 5px;
 }
-#wrapper #wrapped_bottom div#more_bottom{
+#wrapper #wrapped_bottom #more_bottom{
   background: #0e6377;
   height: 100px;
   padding: 10px;
@@ -163,11 +163,11 @@ p {
   color: #fff;
 }
 
-#wrapper #wrapped_bottom #email_signup{
+#wrapper #wrapped_bottom #more_bottom #email_signup{
   margin: 10px 10px 0 0;
   padding: 0px;
 }
-#wrapper #wrapped_bottom #email_signup input#email_signup_email{
+#wrapper #wrapped_bottom #more_bottom #email_signup input#email_signup_email{
   position: absolute;
   font-size: 16px;
   margin-top: 5px;
@@ -175,11 +175,11 @@ p {
   width: 165px;
   height: 20px
 }
-#wrapper #wrapped_bottom #email_signup input#email_signup_email.example {
+#wrapper #wrapped_bottom #more_bottom #email_signup input#email_signup_email.example {
   font-size: 12px;
   color: #999;
 }
-#wrapper #wrapped_bottom #email_signup input#email_signup_submit{
+#wrapper #wrapped_bottom #more_bottom #email_signup input#email_signup_submit{
   position: relative;
   left: 190px;
   font-size: 20px;
