@@ -193,7 +193,7 @@ p {
   color: #8b5c28;
   background: #f1d14c;
   border: 2px solid #fff;
-  border-radius: 5px;
+  border-radius: 1px;
 }
 #wrapper #wrapped_bottom #connect_stuff{
   float: right;
