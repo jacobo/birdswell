@@ -206,6 +206,13 @@ p {
 #wrapper #wrapped_middle{
   padding: 15px;
 }
+#wrapper #wrapped_middle .countdown{
+  background: #0f6377;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 2px;
+}
 #upper_header{
   text-align: right;
   color: #0e6377;

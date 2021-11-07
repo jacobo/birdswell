@@ -48,6 +48,13 @@
     <div class="content_top">
 
 		</div>
+		<div class="countdown">
+			<strong>Limited Release:</strong> November 15 - December 1
+			<div class="dynamic" style="float: right">
+				<!-- launching in 4 days 2 hours -->
+				<!-- 5 days 4 hours remaining -->
+			</div>
+		</div>
     <div class="content_middle">
 
 			<img src="assets/hero.webp" style="width: 100%; margin-bottom: 10px;"/>
@@ -88,11 +95,12 @@
 		<img src="/assets/linoraw.jpg" style="width: 100%; margin-bottom: 10px;"/>
 
 		<p>
-			2. <a href="https://www.etsy.com/shop/BirdSwell">Clothing and Specialty Products</a> will be limited edition and available for a limited amount of time. After 2 weeks from the release date, I will close sales and the design will be discontinued.
+			2. <a target="_blanke" href="https://www.etsy.com/shop/BirdSwell">Clothing and Specialty Products</a> will be limited edition and available for a limited amount of time. After 2 weeks from the release date, I will close sales and the design will be discontinued.
 		</p>
 
 		<p>
-			3. <a href="https://www.etsy.com/shop/BirdSwell?ref=seller-platform-mcnav&section_id=36007917">Lino Block BirdSwell Prints</a> and <a href="https://www.zazzle.com/store/jbirdcreations/products">Greeting Cards</a> of my paintings will be readily available.
+			3. <a target="_blank" href="https://www.etsy.com/shop/BirdSwell?ref=seller-platform-mcnav&section_id=36007917">Lino Block BirdSwell Prints</a> 
+			and <a target="_blank" href="https://www.zazzle.com/store/jbirdcreations/products">Greeting Cards</a> of my paintings will be readily available.
 		</p>
 		
 		<p>
@@ -137,6 +145,26 @@
 			<script type="text/javascript">
 				$(document).ready(function() {
 					$('#email_signup_email').example('Type your email here');
+
+					var present_date = new Date();
+					var one_day = 1000 * 60 * 60 * 24;
+					var one_hour = 1000 * 60 * 60 * 24;
+					var start_date = new Date(present_date.getFullYear(), 10, 15)
+					var end_date = new Date(present_date.getFullYear(), 11, 1)
+					var til_start = Math.round(start_date.getTime() - present_date.getTime()) / (one_day);
+					var til_start_hours = (til_start * 24) % 24; 
+					var til_end = Math.round(end_date.getTime() - present_date.getTime()) / (one_day);
+					var til_end_hours = (til_end * 24) % 24;
+
+					console.log("til_start", Math.floor(til_start), Math.floor(til_start_hours));
+					console.log("til_end", Math.floor(til_end), Math.floor(til_end_hours));
+
+					if(til_start > 0){
+						$('.countdown .dynamic').text("Launching in "+Math.floor(til_start)+" days "+Math.floor(til_start_hours)+" hours");
+					} else {
+						$('.countdown .dynamic').text(""+Math.floor(til_end)+" days "+Math.floor(til_end_hours)+" hours remaining");
+					}
+
 			 	});
 			</script>
 		</div>
