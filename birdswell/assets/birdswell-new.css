@@ -184,12 +184,12 @@ p {
   left: 190px;
   font-size: 20px;
   line-height: 25px;
-  font-family: 'Mighty';
+  /* font-family: 'Mighty'; */
   font-weight: bold;
   margin: 0;
   margin-top: 5px;
-  padding: 5px 5px 0px 5px;
-  text-transform: uppercase;
+  /* padding: 5px 5px 0px 5px; */
+  /* text-transform: uppercase; */
   color: #8b5c28;
   background: #f1d14c;
   border: 2px solid #fff;
