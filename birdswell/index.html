@@ -49,10 +49,8 @@
 
 		</div>
 		<div class="countdown">
-			<strong>Limited Release:</strong> November 15 - December 1
+			<strong>Winter Limited Release:</strong> November 15 - December 1
 			<div class="dynamic" style="float: right">
-				<!-- launching in 4 days 2 hours -->
-				<!-- 5 days 4 hours remaining -->
 			</div>
 		</div>
     <div class="content_middle">
@@ -106,7 +104,7 @@
 		</p>
 		
 		<p>
-		I am excited to re-ignite this passion and share my offering with you all once again.
+		I am excited to re-ignite this passion and share my offering again.
 		</p>
 
 		<span class="mighty2">Spread the Swell,</span>
@@ -148,11 +146,9 @@
 			<input id="email_signup_submit" type="submit" name="subscribe" value="Sign Up!"> 
 			</form>
 			<!--End mc_embed_signup-->
-
 			<script type="text/javascript">
 				$(document).ready(function() {
 					$('#email_signup_email').example('Type your email here');
-
 					var present_date = new Date();
 					var one_day = 1000 * 60 * 60 * 24;
 					var one_hour = 1000 * 60 * 60 * 24;
@@ -162,19 +158,15 @@
 					var til_start_hours = (til_start * 24) % 24; 
 					var til_end = Math.round(end_date.getTime() - present_date.getTime()) / (one_day);
 					var til_end_hours = (til_end * 24) % 24;
-
-					console.log("til_start", Math.floor(til_start), Math.floor(til_start_hours));
-					console.log("til_end", Math.floor(til_end), Math.floor(til_end_hours));
-
 					if(til_start > 0){
 						$('.countdown .dynamic').text("Launching in "+Math.floor(til_start)+" days "+Math.floor(til_start_hours)+" hours");
 					} else {
 						$('.countdown .dynamic').text(""+Math.floor(til_end)+" days "+Math.floor(til_end_hours)+" hours remaining");
 					}
-
 			 	});
 			</script>
-		</div>
+
+</div>
   </div>
 	</div>
 	
