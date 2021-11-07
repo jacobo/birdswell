@@ -152,7 +152,7 @@ p {
   position: relative; */
   padding: 100px 5px 5px 5px;
 }
-#wrapper #wrapped_bottom #more_bottom{
+#wrapper #wrapped_bottom div#more_bottom{
   background: #0e6377;
   height: 100px;
   padding: 10px;
