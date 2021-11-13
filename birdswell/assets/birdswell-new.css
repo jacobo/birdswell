@@ -108,6 +108,11 @@ p {
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.floaty-bottom-links a {
+  text-decoration: none;
+  font-weight: normal;
+  margin-left: 10px;
+}
 #wrapper #wrapped_top_new{
   position: relative;
   width: 947px;
