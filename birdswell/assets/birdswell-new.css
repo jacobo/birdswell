@@ -98,6 +98,11 @@ a {
 p {
   padding-bottom: 18px;
 }
+
+.nowrap {
+  white-space: nowrap;
+}
+
 #wrapper {
   background: #fff;
   width: 947px; 
