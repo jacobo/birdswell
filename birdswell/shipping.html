@@ -48,7 +48,7 @@
 
 		</div>
 		<div class="countdown">
-			<strong>2022 Spring Limited Release:</strong> May 1 - May 15
+			<strong>2022 Winter Limited Release:</strong> Nov 15 - Dec 1
 			<div class="dynamic" style="float: right">
 			</div>
 		</div>
@@ -114,17 +114,22 @@ If you have any questions regarding our shipping policy feel free to contact us 
 					var one_day = 1000 * 60 * 60 * 24;
 					var one_hour = 1000 * 60 * 60 * 24;
 					// NOTE: js dates are zero-indexed so month "4" is really "May"
-					var start_date = new Date(present_date.getFullYear(), 4, 1)
-					var end_date = new Date(present_date.getFullYear(), 4, 16)
+					// Nov is 10
+					// Dec is 11
+					var start_date = new Date(present_date.getFullYear(), 10, 15)
+					var end_date = new Date(present_date.getFullYear(), 11, 1)
 					var til_start = Math.round(start_date.getTime() - present_date.getTime()) / (one_day);
 					var til_start_hours = (til_start * 24) % 24;
 					var til_end = Math.round(end_date.getTime() - present_date.getTime()) / (one_day);
 					var til_end_hours = (til_end * 24) % 24;
 					if(til_start > 0){
 						$('.countdown .dynamic').text("Launching in "+Math.floor(til_start)+" days "+Math.floor(til_start_hours)+" hours");
-					} else {
+					} else if(til_end > 0) {
 						$('.countdown .dynamic').text(""+Math.floor(til_end)+" days "+Math.floor(til_end_hours)+" hours remaining");
-					}});
+					} else {
+						$('.countdown .dynamic').text("Sales Closed");
+					}
+				});
 			</script>
 
 </div>

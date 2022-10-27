@@ -162,9 +162,12 @@
 					var til_end_hours = (til_end * 24) % 24;
 					if(til_start > 0){
 						$('.countdown .dynamic').text("Launching in "+Math.floor(til_start)+" days "+Math.floor(til_start_hours)+" hours");
-					} else {
+					} else if(til_end > 0) {
 						$('.countdown .dynamic').text(""+Math.floor(til_end)+" days "+Math.floor(til_end_hours)+" hours remaining");
-					}});
+					} else {
+						$('.countdown .dynamic').text("Sales Closed");
+					}
+				});
 			</script>
 
 </div>
